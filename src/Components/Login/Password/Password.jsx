@@ -1,9 +1,11 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import './Password.scss'
 
 export default function Password({ render, setRender }) {
   const dispatch = useDispatch()
+  const navigate = useNavigate()
   const formHandler = (e) => {
     e.preventDefault()
     setRender(!render)
@@ -21,7 +23,7 @@ export default function Password({ render, setRender }) {
     })
   }
   const next = () => {
-
+      navigate('/')
   }
 
   return (
@@ -32,7 +34,7 @@ export default function Password({ render, setRender }) {
           <input type="text" name='userName' placeholder='User Name' />
           <input type="text" name='password1' placeholder='Password1' />
           <input type="text" name='password2' placeholder='Password2' />
-          <button onClick={next} type='submit'>next</button>
+          <button onClick={next} type='submit'>The End</button>
         </form>
         </div>
     </section>
