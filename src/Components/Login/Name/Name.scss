@@ -1,0 +1,27 @@
+.name{
+    .container{
+        form{
+            margin-top: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 150px;
+            input{
+                width: 200px;
+                height: 30px;
+                padding-left: 1rem;
+                border-radius: 1rem;
+                border: 1px solid #000;
+            }
+            button{
+                width: 120px;
+                height: 30px;
+                color: #fff;
+                border: transparent;
+                background: #000;
+                border-radius: 1rem;
+            }
+        }
+    }
+}

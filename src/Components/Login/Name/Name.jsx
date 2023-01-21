@@ -20,7 +20,6 @@ export default function Name({ render, setRender }) {
   return (
     <section className='name'>
       <div className="container">
-        <h1>na</h1>
         <form onSubmit={formHandler} action="#">
           <input type="text" name='firstName' placeholder='First Name' />
           <input type="text" name='lastName' placeholder='Last Name' />
