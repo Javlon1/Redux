@@ -18,8 +18,9 @@ export default function Name({ render, setRender }) {
       }
     })
   }
+  
   const next = () => {
-      navigate('/login/contact')
+    navigate('/login/contact')
   }
 
   return (

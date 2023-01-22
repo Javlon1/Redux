@@ -10,7 +10,7 @@ export default function Contact({ render, setRender }) {
     e.preventDefault()
     const val = e.target.elements
     setRender(!render)
-    dispatch({
+    dispatch({ 
       type: 'CONTACT',
       payload: {
         tel: val.tel.value,
@@ -19,9 +19,11 @@ export default function Contact({ render, setRender }) {
       }
     })
   }
+  
   const next = () => {
       navigate('/login/password')
   }
+
   return (
     <section className='contact'>
         <div className="container">
