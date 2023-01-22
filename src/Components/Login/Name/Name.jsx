@@ -10,6 +10,9 @@ export default function Name({ render, setRender }) {
     e.preventDefault()
     setRender(!render)
     const val = e.target.elements
+    const next = () => {
+
+    }
     dispatch({
       type: 'NAME',
       payload: {
@@ -24,8 +27,8 @@ export default function Name({ render, setRender }) {
       <div className="container">
         <h1>hame</h1>
         <form onSubmit={formHandler} action="#">
-          <input type="text" name='firstName' placeholder='First Name' />
-          <input type="text" name='lastName' placeholder='Last Name' />
+          <input type="text" name='firstName' placeholder='First Name' required/>
+          <input type="text" name='lastName' placeholder='Last Name' required/>
           <button onClick={navigate('/login/contact')} type='submit'>next</button>
         </form>
       </div>

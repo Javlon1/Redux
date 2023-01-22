@@ -30,9 +30,9 @@ export default function Password({ render, setRender }) {
       <div className="container">
         <h1>password</h1>
         <form onSubmit={formHandler} action="#">
-          <input type="text" name='userName' placeholder='User Name' />
-          <input type="text" name='password1' placeholder='Password1' />
-          <input type="text" name='password2' placeholder='Password2' />
+          <input type="text" name='userName' placeholder='User Name' required/>
+          <input type="text" name='password1' placeholder='Password1' required/>
+          <input type="text" name='password2' placeholder='Password2' required/>
           <button onClick={navigate('/result')} type='submit'>The End</button>
         </form>
       </div>

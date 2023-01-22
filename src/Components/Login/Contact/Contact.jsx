@@ -25,9 +25,9 @@ export default function Contact({ render, setRender }) {
         <div className="container">
         <h1>contact</h1>
         <form onSubmit={formHandler} action="#">
-          <input type="text" name='tel' placeholder='Telephone' />
-          <input type="text" name='email' placeholder='Email' />
-          <input type="text" name='address' placeholder='Address' />
+          <input type="text" name='tel' placeholder='Telephone' required/>
+          <input type="text" name='email' placeholder='Email' required/>
+          <input type="text" name='address' placeholder='Address' required/>
           <button onClick={navigate('/login/password')} type='submit'>next</button>
         </form>
         </div>
