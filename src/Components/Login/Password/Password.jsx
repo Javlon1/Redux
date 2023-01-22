@@ -34,7 +34,7 @@ export default function Password({ render, setRender }) {
           <input type="text" name='userName' placeholder='User Name' required/>
           <input type="text" name='password1' placeholder='Password1' required/>
           <input type="text" name='password2' placeholder='Password2' required/>
-          <button onClick={res} type='submit'>The End</button>
+          <button onClick={navigate('/result')} type='submit'>The End</button>
         </form>
       </div>
     </section>
