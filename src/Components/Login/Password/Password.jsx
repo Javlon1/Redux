@@ -5,6 +5,7 @@ import './Password.scss'
 
 export default function Password({ render, setRender }) {
   const dispatch = useDispatch()
+  const navigate = useNavigate()
 
   const formHandler = (e) => {
     e.preventDefault()
@@ -32,7 +33,7 @@ export default function Password({ render, setRender }) {
           <input type="text" name='userName' placeholder='User Name' />
           <input type="text" name='password1' placeholder='Password1' />
           <input type="text" name='password2' placeholder='Password2' />
-          <button type='submit'>The End</button>
+          <button onClick={navigate('/result')} type='submit'>The End</button>
         </form>
       </div>
     </section>

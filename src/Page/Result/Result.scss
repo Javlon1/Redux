@@ -1,0 +1,41 @@
+.result {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+
+    &__text {
+      width: 200px;
+      font-size: 1.2rem;
+      font-weight: 550;
+      text-align: center;
+      margin: 0;
+
+      b {
+        font-size: 2rem;
+      }
+    }
+
+    &__list {
+      padding: 0;
+
+      &__item {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 550;
+
+        &__p {
+          padding-left: 10px;
+          font-size: 1rem;
+          font-weight: 500;
+
+        }
+      }
+    }
+  }
+}

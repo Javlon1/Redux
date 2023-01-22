@@ -18,10 +18,6 @@ export default function Name({ render, setRender }) {
       }
     })
   }
-  
-  const next = () => {
-    navigate('/login/contact')
-  }
 
   return (
     <section className='name'>
@@ -30,7 +26,7 @@ export default function Name({ render, setRender }) {
         <form onSubmit={formHandler} action="#">
           <input type="text" name='firstName' placeholder='First Name' />
           <input type="text" name='lastName' placeholder='Last Name' />
-          <button onClick={next} type='submit'>next</button>
+          <button onClick={navigate('/login/contact')} type='submit'>next</button>
         </form>
       </div>
     </section>

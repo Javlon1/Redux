@@ -20,10 +20,6 @@ export default function Contact({ render, setRender }) {
     })
   }
   
-  const next = () => {
-      navigate('/login/password')
-  }
-
   return (
     <section className='contact'>
         <div className="container">
@@ -32,7 +28,7 @@ export default function Contact({ render, setRender }) {
           <input type="text" name='tel' placeholder='Telephone' />
           <input type="text" name='email' placeholder='Email' />
           <input type="text" name='address' placeholder='Address' />
-          <button onClick={next} type='submit'>next</button>
+          <button onClick={navigate('/login/password')} type='submit'>next</button>
         </form>
         </div>
     </section>
